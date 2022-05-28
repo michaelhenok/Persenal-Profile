@@ -1,0 +1,62 @@
+body{
+   background-image: url(img/silverware.jpg);
+}
+.Menu{
+    color: rgb(69, 104, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    size-adjust: 55px;
+    background-color: rgb(199, 201, 204);
+    background-image: url(img/background.gif);
+    
+}
+.menu{
+    color: rgb(68, 101, 2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    size-adjust: 80px;
+    background-color: rgb(199, 201, 204);
+    background-image: url(img/background2.gif);
+
+}
+.ingrident{
+    size: 12px;
+    font-style:oblique;
+}
+.ingrdent-menu{
+    color:rgb(32, 49, 1);
+    size: 12px;
+    font-style:oblique;
+    font-size: 13px;
+}
+.firstimg{
+    margin-top: 30px;
+    width: 180px;
+    font-style:oblique;
+    
+}
+.dir{
+    color:rgb(41, 61, 1);
+    font-size: 14px;
+    font-style:oblique;
+
+}
+.fon{
+    font-style:oblique;
+    font-size: 13px;
+
+}
+.comment{
+    background-color: yellow;
+    font-style:oblique;
+    font-size: 13px;
+}
+.copy{
+    font-style:oblique;
+    font-size: 13px;
+
+}
+.lin{
+    color: rgb(104, 152, 9);
+}
