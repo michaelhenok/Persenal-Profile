@@ -1,0 +1,69 @@
+body{
+    background-color: black;
+    margin-top: 12%;
+   
+    
+}
+
+.header{
+    display: inline-block;
+}
+.left{
+    float: left;
+    width: 250px;
+    margin: 8%;
+    margin-top: 1%;
+    font-style:oblique;
+    color: rgb(176, 180, 183);
+
+}
+.mid{
+    color: rgb(176, 180, 183);
+    font-style:oblique;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+.twe{
+   size-adjust: 20px;
+
+}
+h3{
+    color: aliceblue;
+    text-align:center;
+}
+hr{
+    color: white;
+}
+.imagedoc{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 10px;
+    padding: 10px;
+    margin-right: 8%;
+    margin-left: -10%;
+    
+}
+.tell{
+    color: aliceblue;
+    font-style:oblique;
+}
+.tel{
+    color:aliceblue;
+    font-style:oblique;
+    
+}
+.texts{
+    color: aliceblue;
+    font-style:italic;
+    margin: 20px;
+}
+
+.forem{
+    padding: 3px;
+    margin-left: 20px;
+    border-radius: 13px;
+    background-color: yellowgreen;
+    text-align: left;
+
+}
