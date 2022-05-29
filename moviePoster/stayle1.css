@@ -2,14 +2,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('background.png');
+    background-image: url('img/background.png');
     font-size: 8pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .banner {
-    background: url('bannerbg.png');
-    position: sticky;
+    background: url('img/bannerbg.png');
+    
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
 
 /* here i make background for number  */
 .number {
-    background: url('rbg.png');
+    background: url('img/rbg.png');
     background-repeat: repeat-x;
     overflow: hidden;
 
