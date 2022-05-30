@@ -86,9 +86,8 @@ function findLongestWord(str){
         }
     }
     return newlength;
-
 }
-console.log(findLongestWord("The","quick","brown","fox","jumped","over","the","lazy","dog" ));
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog" ));
 console.log("-----------------------------------")
 
 // Write a function filterLongWords() that takes an array of words and an 
