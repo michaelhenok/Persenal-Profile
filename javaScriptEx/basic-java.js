@@ -93,3 +93,13 @@ console.log("-----------------------------------")
 // Write a function filterLongWords() that takes an array of words and an 
 //integer i and returns the array of words that are longer than i.
 
+let array =[4,50,6];
+let tempArray = [45,6,6,44,332,2,22];
+tempArray.pop();
+console.log(tempArray)
+
+console.log(array.reduce(function(prev,element,index,array){
+    console.log(prev)
+   prev.pop();
+   return prev;
+},tempArray));

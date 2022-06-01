@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<script>
+
+    $(function () {
+        // let leb = document.getElementById("demo").innerHTML = "hello World";
+        //$("#demo").replaceWith("<strong>Hello</strong>");
+
+        let newEle = document.createElement("div");
+        document.getElementById("demo").append(newEle);
+        let parg = document.createElement("p");
+        parg.innerHTML = '23423423'
+
+        let image = document.createElement("img");
+        image.src = "henok.jpg",
+            image.style.width = "100px",
+
+            document.getElementsByTagName("div")[0].append(image)
+        //document.getElementsByTagName("div")[0].append(parg)
+        //    document.getElementsByTagName
+
+        let divElement = document.createElement("div");
+        divElement.innerHTML = "new DIV element replaced"
+
+        let spanElement = document.getElementById("span1");
+        // console.log(spanElement)
+        spanElement.replaceWith(divElement);
+        
+
+        let table = document.createElement("table");
+        table.innerHTML = "<tr>  <td> column1</td>  <td>column2</td>   <td>column3</td></tr>";
+        table.style.border= "1px solid black";
+        $("# tableId").append(table)
+
+        let myradio = document.getElementById("rad")
+        myradio.setAttribute('type','radio')
+        myradio.innerHTML = "<input <p>cccc <p> >"
+        
+
+        // $("#tableId").after(table)
+        // //table.remove();
+        
+    });
+
+</script>
+
+<body>
+    <p id="demo">Abile </p>
+
+    <span id="span1">span block</span>
+    <div id = "tableId"></div>
+    <input id="rad">
+
+</body>
+
+</html>
