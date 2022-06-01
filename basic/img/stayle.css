@@ -1,69 +1,77 @@
 body{
     background-color: black;
-    margin-top: 12%;
-   
-    
-}
-
-.header{
-    display: inline-block;
-}
-.left{
-    float: left;
-    width: 250px;
-    margin: 8%;
-    margin-top: 1%;
-    font-style:oblique;
-    color: rgb(176, 180, 183);
-
-}
-.mid{
-    color: rgb(176, 180, 183);
-    font-style:oblique;
-    margin-left: 15%;
-    margin-right: 15%;
-
-}
-.twe{
-   size-adjust: 20px;
-
-}
-h3{
-    color: aliceblue;
-    text-align:center;
-}
-hr{
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
 }
-.imagedoc{
+.new1{
+    border-radius:100px;
+    background-color: orange;
+    color: white;
+    font-size: large;
+    padding: 20px;
+    margin: -50px;
+    width: 130px;
+
+}
+.new{
+    border-radius: 150px;
+background-color: black;
+color: white;
+padding: 20px;
+font-size: medium;
+width: 250px;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+.box{
+flex: 25%;
+padding: 20px;
+align-items: center;
+box-sizing: content-box;
+}
+.box-one{
     display: grid;
-    grid-template-columns: auto auto ;
-    gap: 10px;
-    padding: 10px;
-    margin-right: 8%;
-    margin-left: -10%;
-    
+    grid-template: 2,2;
+    grid-column-start: auto;
 }
-.tell{
-    color: aliceblue;
-    font-style:oblique;
+.twt{
+    list-style: url(tweet.png);
 }
-.tel{
-    color:aliceblue;
-    font-style:oblique;
-    
-}
-.texts{
-    color: aliceblue;
-    font-style:italic;
-    margin: 20px;
+.cont{
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+   
 }
 
-.forem{
-    padding: 3px;
-    margin-left: 20px;
-    border-radius: 13px;
-    background-color: yellowgreen;
-    text-align: left;
+    .im{
+       width: 200px; 
+       height: 200px;
+    }
+    .fter{
+        padding-right: 15px;
 
-}
+    }
+    #col{
+        padding-right: 50px;
+        float:  right;
+    }
+    .tw{
+        padding: 10px;
+    }
+
+    .foot{
+        border-top: 0.5px solid gray;
+        padding: 80px;
+        margin-top: 120px;
+        
+
+    }
