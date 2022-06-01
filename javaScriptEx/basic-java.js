@@ -1,105 +1,77 @@
-// .Define a function max() that takes two numbers as arguments and returns the largest of them. 
-function max(a , b){
+//Define a function max() that takes two numbers as 
+//arguments and returns the largest of them. Use the if-then-else construct
+// available in Javascript
 
-    if(a > b){
-        return a;
+const max=(a,b)=>{
+    if(a>b){
+        return a
+    }else if(b>a){
+        return b
+    }else{
+        return"they are equal"
     }
-    else{
-        return b;
-    }
 }
-console.log(max(10,20))
-console.log("-----------------------------------")
+console.log(max(20,10));
 
-// Define a function maxOfThree() that takes three numbers 
-//as arguments and returns the largest of them.
+//question 2
+//Define a function maxOfThree() that takes three numbers as
+// arguments and returns the largest of them.
 
-function threeMax ( num1 , num2 , num3){
-// num1 = parseFloat(prompt("Enter first number"))
-// num2= parseFloat(prompt("Enter first number"))
-// num3 = parseFloat(prompt("Enter first number"))
-var largest
-if(num1>num2 && num1 > num3){
-    largest = num1;
+const maxOfThree=(a,b,c)=> {
+if(a>b&&a>c){
+    return a
+}else if(b>c){
+    return b
+}else{
+    return c
 }
-if(num2>num1 && num2 > num3){
-    largest = num2;
 }
-if(num3>num2 && num3 > num1){
-    largest = num3;
+
+//question 3
+//Write a function isVowel() that takes a character
+// (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+
+function isVowel(word){
+if((word.length===1)&&(word==='a'||word==='e'||word==='i'||word==='o'||word==='u')){
+    return true
 }
-return largest;
-
+else{
+    return false
 }
-console.log("largest number is " + threeMax(20,10,30))
-console.log("-----------------------------------")
-// Write a function isVowel() that takes a character (i.e. a string of length 1)
-// and returns true if it is a vowel, false otherwise.
-
-// .Define a function sum() and a function multiply() that sums and multiplies 
-
-function sum(first , second){
-    let Totsum
-    let TotMul
-    Totsum = first+ second;
-    TotMul = first*second;
-    return ("total sum = " + Totsum + " total multipy " + TotMul);
 }
-console.log(sum(3,5))
-console.log("-----------------------------------")
 
-//.(respectively) all the numbers in an array of numbers. For example, 
-//sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
-
-function SumAndMult(a , b , c , d){
-    let Sumtarget = a + b + c + d;
-    let Multtarget = a * b * c * d;
-    return ( "sum of the numbers is = " + Sumtarget +
-     " Multiply of the numbers is " + Multtarget);
+//question 4
+/**Define a function sum() and a function multiply() 
+ * that sums and multiplies (respectively) all the numbers in 
+ * an array of numbers. For example, sum([1,2,3,4]) should return 10,
+ *  and multiply([1,2,3,4]) should return 24. */
+let sum=(arr)=>{
+    // let sums=0
+    return arr.reduce((c,d)=>c+d,100)
 }
-console.log(SumAndMult( 1 , 2, 3, 4))
-console.log("-----------------------------------")
 
+console.log(sum([1,2,3,4]))
+//multiply
 
-// Define a function reverse() that computes the reversal of a string. 
+let multiply=(arr)=>{
+    return arr.reduce((c,d)=>c*d,100)
+}
+console.log(multiply([1,2,3,4]))
+
+//Define a function reverse() that computes the reversal of a string. 
 //For example, reverse("jag testar") should return the string "ratset gaj".
 
+function reverses(word){
+    let reversed="";
 
-function reverseString(str){
-  let newString = "";
-  for(let i = str.length - 1; i >= 0 ; i--){
-      newString += str[i];    
-  }
-  return newString;
+for (let index = 0; index<word.length; index++) {
+    
+    reversed += word.charAt(word.length-1-index);
+    
 }
-console.log(reverseString("  jag testar"))
-console.log("-----------------------------------")
-// Write a function findLongestWord() that takes an array of words and returns the
-// length of the longest one.
-function findLongestWord(str){
-
-    let newSpit = str.split(' ');
-    let newlength = 0;
-    for (let i = 0 ; i < newSpit.length ; i++){
-        if(newSpit[i].length > newlength){
-            newlength = newSpit[i].length;
-        }
-    }
-    return newlength;
+//console.log(reversed)
+return reversed
 }
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog" ));
-console.log("-----------------------------------")
 
-// Write a function filterLongWords() that takes an array of words and an 
-//integer i and returns the array of words that are longer than i.
-
-let array =[4,50,6];
-let tempArray = [45,6,6,44,332,2,22];
-tempArray.pop();
-console.log(tempArray)
-
-console.log(array.reduce(function(prev,element,index,array){
-    console.log(prev)
-   prev.pop();
-   return prev;
-},tempArray));
+//reverses('rafity')
+console.log(reverses("xaxe"))
