@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        background-color: grey;
+        background-image: url(../AboutMe/happymood.jpg);
+        
+    }
+    #fill{
+        font-size: 40px;
+        color:whitesmoke;
+        font-weight:bold;
+        text-align: center;
+        margin-top:200px
+    }
+</style>
+<script>
+
+    $(function(){
+        $("#submitButton").click(
+            
+        function(){
+        let firstNameLabel=document.createElement("label")
+      firstNameLabel.innerHTML="FirstName :"
+      firstNameLabel.setAttribute("for","xaxe")
+       $("#submitted").append(firstNameLabel)
+
+       let inputfname=document.createElement("label")
+       inputfname.setAttribute("id","xaxe")
+       inputfname.innerHTML=document.getElementById("fname").value
+        $("#submitted").append(inputfname)
+
+         $("#submitted").append(document.createElement("br"))
+
+       let ab=document.createElement("label")
+       ab.innerHTML="About:"
+       ab.setAttribute("for","abo")
+       $("#submitted").append(ab)
+    
+
+       let ab1=document.createElement("label")
+       ab1.setAttribute("id","abo")
+       ab1.innerHTML=document.getElementById("about").value
+        $("#submitted").append(ab1)
+        
+        $("#submitted").append(document.createElement("br"))
+
+
+        let sex=document.createElement("label")
+       sex.innerHTML="Gender:"
+       sex.setAttribute("for","se")
+       $("#submitted").append(sex)
+
+       let sex1=document.createElement("label")
+
+    sex1.innerHTML=$("input[name=gender]:checked").val()
+        $("#submitted").append(sex1)
+
+        
+        $("#submitted").append(sex1)
+        
+        $("#submitted").append(document.createElement("br"))
+
+        let cour=document.createElement("label")
+       cour.innerHTML="Course:"
+       cour.setAttribute("for","co")
+       $("#submitted").append(cour)
+    
+    let courval=document.createElement("label")
+   
+    courval.innerHTML=document.getElementById("ca").value
+    $("#submitted").append(courval)
+
+    $("#submitted").append(document.createElement("br"))
+
+
+    let gag=document.createElement("label")
+       gag.innerHTML="Gadget:"
+       gag.setAttribute("for","ga")
+       $("#submitted").append(gag)
+
+    let gagval=document.createElement("label")
+    var array=[]
+    $("input[name=gadget]:checked").each(function(){
+        array.push($(this).val())
+        
+        
+    });
+    gagval.innerHTML=array.toString()
+      
+        $("#submitted").append(gagval)
+        $("#submitted").append(document.createElement("br"))
+
+        let abc=$("#submitted")
+        $("#fill").replaceWith(abc)
+        
+    }
+    )
+    
+    })
+</script>
+<body>
+    
+    <div id="fill">
+       
+        <div id="firstName">Enter-Your-Name: <input id="fname" type="text" name="fname" ></div>
+        <div id="About">Write-About-you: <textarea name="about" id="about" cols="25" rows="2"></textarea></div>
+        <div id="Gender">Gender: Male <input class="ma" type="radio" name="gender" value="male">Female<input class="ma" type="radio" name="gender" value="female"></div>
+       <div id="Course">Courses:
+         <select id="ca" name="courses">
+             <optgroup label="IT" >
+            <option value="maths">C++</option>
+            <option value="wap">Java</option>
+            <option value="fpp">javaScript</option>
+        </optgroup>
+       
+        </optgroup>
+         </select></div>
+         <div id="Gadget">
+            <input id="gadget1" type="checkbox" name="gadget" value="phone">
+            <label for="gadget1">Undergard:</label>
+
+            <input id="gadget2" type="checkbox" name="gadget" value="laptop">
+            <label for="gadget2">Mastert:</label>
+
+            <input id="gadget3" type="checkbox" name="gadget" value="Tablet">
+            <label for="gadget3">Bachler:</label>
+           
+           </div>
+       
+           <div id ="submit"><input id="submitButton" type="submit" value="Submit">
+            <input id="clear" type="submit" value="Clear">
+        
+        </div>
+        
+    </div>
+
+    <div id="submitted"></div>
+
+    <div>
+        <a href="https://validator.w3.org/nu/?doc=http://michaelhenok.github.io/Dom/dom.html">
+         <img src="w3c-css.png" alt="">
+         </a>
+         <a href="https://validator.w3.org/nu/?doc=http://michaelhenok.github.io/Dom/dom.html">
+         <img src="w3c-html.png" alt="">
+        </a>
+       </div>
+
+</body>
+</html>
+http://michaelhenok.github.io/Dom/dom.html
