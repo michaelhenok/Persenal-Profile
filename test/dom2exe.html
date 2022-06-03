@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<script>
+    var arr = ['Apple', 'Mango', 'Banana'];
+
+    var cont = document.getElementById('container');
+
+    // create ul element and set the attributes.
+    var ul = document.createElement('ul');
+    
+    ul.setAttribute('style', 'padding: 0; margin: 0;');
+    ul.setAttribute('id', 'theList');
+
+    for (i = 0; i <= arr.length - 1; i++) {
+        var li = document.createElement('li');     // create li element.
+        li.innerHTML = arr[i];      // assigning text to li using array value.
+        li.setAttribute('style', 'display: block;');    // remove the bullets.
+
+        ul.appendChild(li);  
+       // append li to ul.
+    }
+    console.log(ul) ;  
+    // cont.appendChild(ul);       // add list to the container.
+</script>
+
+
+
+
+<style>
+    .tab{
+
+        border: 1px solid 1px;
+    }
+</style>
+
+<body>
+
+    <div class=" container ">
+
+    </div>
+
+    <!-- <table class="tab">
+
+        <tr>
+            <td>Player</td> 
+            <td> goal</td>
+            <td> time</td>
+        </tr>
+        
+       
+        
+        <tr>
+
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <th>CR-7</th>
+            <td>7</td>
+            <td>4,569</td>
+        </tr>
+        <tr>
+            <th scope="row">messi</th>
+            <td>7</td>
+            <td>7,223</td>
+        </tr>
+        <tr>
+            <th scope="row">saka</th>
+            <td>9</td>
+            <td>6,219</td>
+        </tr>
+    </table> -->
+
+    
+</body>
+
+</html>
