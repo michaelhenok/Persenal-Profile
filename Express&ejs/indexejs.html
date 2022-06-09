@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    
+    <form method="post" action= "/add" >
+
+        <label for="name">Full-Name:</label>
+        <input class="name" type="text" id="name" name="name" placeholder="name"> <br>
+        <label  for="radio">Gender :</label>
+        <label  for="male">Male</label>
+        <input class="gender"  type="radio" id="male" name="rad">
+        <label  for="Female">Female</label>
+        <input  class="gender" type="radio" id="Female" name="rad">
+        <label  for="Other">Other</label>
+        <input  class="gender"  type="radio" id="other" name="rad">
+        <br>
+        <div>
+        <label for="">Ability : </label>
+        <label>Soccer</label>
+        <input class="box" type="checkbox" value="checkbox1" id="checkbox1" name="checkbox1">
+        <label>basketball</label>
+        <input class="box" type="checkbox" value="checkbox2" id="checkbox1" name="checkbox2">
+        <label>tennis</label>
+        <input class="box" type="checkbox" value="checkbox3" id="checkbox1" name="checkbox3">
+        
+
+        </div>
+        
+        <div class="box">
+            <select id="select1" name="selectedValue">
+               
+                <option value="option1">age:1-25</option>
+                <option value="option2">age:26-50</option>
+                <option value="option3">age:51-75</option>
+                <option value="option4">age:76-greter</option>
+            </select>
+        </div>
+
+        <input class="box" type="submit">
+
+    </form>
+</body>
+</html>
